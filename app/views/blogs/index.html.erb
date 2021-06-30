@@ -40,6 +40,8 @@
     <div class="blog-box">
 
       <% @blogs.each do |blog| %>
+      <% binding.pry %>
+      <!--正しくデータを取得できているか確認するためにpry-byebugを使います。-->
        <div class="blog-item">
          <div class="blog-image"><%= image_tag('img/forest.jpg', class: 'blog-image') %></div>
          <section class="blog-text">
@@ -49,7 +51,7 @@
          </section>
        </div>
        <% end %>
-       
+
       <div class="blog-item">
         <%= image_tag('img/forest.jpg', class: 'blog-image') %>
         <section class="blog-text">

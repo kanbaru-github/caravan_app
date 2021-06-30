@@ -48,6 +48,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'pry-byebug'
+  # アプリケーションに導入して、記述を加えることでプログラムの処理を止めて、その時点のアプリケーションの状態を確認することができるgemです。
+  # アプリケーションの状態とは、「ある時点で、この変数にはどんな値が入っているか」ということです。
 end
 
 group :test do
